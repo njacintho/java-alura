@@ -1,0 +1,10 @@
+
+public class identificador {
+	public void identificar(int i) {
+		for(i = 21; i < 999; i ++) {
+			 
+	}
+	 
+	 }
+
+}

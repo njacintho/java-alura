@@ -1,0 +1,12 @@
+package modelo;
+
+public class SeguroVida implements Tributavel {
+
+	@Override
+	public double getvalorImposto() {
+		return 42;
+	}
+	
+	
+
+}

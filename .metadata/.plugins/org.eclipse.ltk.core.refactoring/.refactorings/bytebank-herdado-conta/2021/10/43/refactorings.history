@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Conta.java&apos; to &apos;exercicios-livro-conta-4.12/src&apos;&#x0D;&#x0A;- Original project: &apos;bytebank-herdado-conta&apos;&#x0D;&#x0A;- Destination element: &apos;exercicios-livro-conta-4.12/src&apos;&#x0D;&#x0A;- Original element: &apos;Conta.java&apos;" description="Copy compilation unit" destination="=exercicios-livro-conta-4.12/src" element1="/src&lt;{Conta.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1634574660736" units="1" version="1.0"/>
+</session>

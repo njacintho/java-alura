@@ -1,0 +1,29 @@
+package br.com.bytebank.banco.test;
+
+public class TesteString {
+	public static void main(String[] args) {
+		
+		//Crinado um objeto de forma literal
+		String nome = "Alura";
+		
+		//String outra = nome.replace('A', 'a');//tipo char , usa aspas simples
+		
+		
+		// uma String não pode ser alterada ela nasceu assim e ficara assim , é imutável, para altera a String precisa criar outra String e alterar
+		
+		// é a mesma coisa que: String sobrenome = new String("Alura");
+		
+		//nome.toLowerCase(); //não altera
+		// para olterar necssario criar nova string
+		
+		//String nomeia = nome.toUpperCase();
+		
+		//System.out.println(nome);
+		
+		//System.out.println(nomeia);
+		
+		char c = nome.charAt(2); //mostr a posição
+		System.out.println(c);
+	}
+
+}

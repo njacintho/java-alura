@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="FuncionarioTipos"/>
+    <fullyQualifiedTypeName name="Funcionario"/>
+    <fullyQualifiedTypeName name="Gerente"/>
+    <fullyQualifiedTypeName name="Fibonacci2"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="javax.sound.midi.MidiUnavailableException"/>
+    <fullyQualifiedTypeName name="MinhaExcessaoUnchecked"/>
+    <fullyQualifiedTypeName name="java.lang.Runtime"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="ContaCorrente"/>
+    <fullyQualifiedTypeName name="SaldoInsuficienteException"/>
+    <fullyQualifiedTypeName name="MinhaExcecao"/>
+    <fullyQualifiedTypeName name="MinhaExcessaoChecked"/>
+    <fullyQualifiedTypeName name="Conexao"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
+    <fullyQualifiedTypeName name="java.lang.AutoCloseable"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="modelo.SaldoInsuficienteException"/>
+    <fullyQualifiedTypeName name="modelo.ContaPoupanca"/>
+    <fullyQualifiedTypeName name="modelo.Conta"/>
+    <fullyQualifiedTypeName name="modelo.ContaCorrente"/>
+    <fullyQualifiedTypeName name="modelo.SeguroVida"/>
+    <fullyQualifiedTypeName name="modelo.CalculadorImposto"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.Conta"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.ContaCorrente"/>
+</qualifiedTypeNameHistroy>
