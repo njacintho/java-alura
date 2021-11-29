@@ -1,16 +1,15 @@
 package br.com.bytebank.banco.test;
 
-import java.security.GuardedObject;
-
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
-import br.com.bytebank.banco.modelo.GaurdadorDeContas;
+import br.com.bytebank.banco.modelo.GuadadorDeReferencias;
 
-public class Teste {
+public class TesteGuardadorReferencias {
 	
 	public static void main(String[] args) {
 		
-		GaurdadorDeContas guardador = new GaurdadorDeContas();
+		GuadadorDeReferencias guardador = new GuadadorDeReferencias();
+		
 		
 		Conta cc = new ContaCorrente(1223, 3455);
 		guardador.adiciona(cc);
@@ -24,7 +23,7 @@ public class Teste {
 		
 		System.out.println(tamanho);
 		
-		Conta ref = guardador.getPosicaoReferecia(1);
+		Conta ref =(Conta) guardador.getPosicaoReferecia(1);
 		System.out.println(ref.getNumero());
 	}
 
