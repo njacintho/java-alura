@@ -1,12 +1,9 @@
 package br.co.alura.java.io.test;
 
 import java.io.BufferedWriter;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
+
 
 public class TesteEscritaFileWriterTimeMillis {
 

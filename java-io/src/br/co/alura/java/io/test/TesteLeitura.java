@@ -15,6 +15,8 @@ public class TesteLeitura {
 		
 		InputStream fis = new FileInputStream("loren.txt"); // lê o arquivo
 		Reader isr = new InputStreamReader(fis); // tranforma os bytes do aruivo (binarios) em caracter
+
+		//Reader isr = new InputStreamReader(fis, "UTF-8"); testando o colcoar em UTF-8
 		BufferedReader br = new BufferedReader(isr); // guarda todos os caracteres de uma linha
 		
 		String linha = br.readLine(); //vai ler uma linha inteira
