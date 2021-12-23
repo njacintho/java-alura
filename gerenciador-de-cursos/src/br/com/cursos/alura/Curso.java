@@ -12,7 +12,8 @@ public class Curso {
 	private String instrutor;
 	private List<Aula> aulas = new LinkedList<Aula>();
 	private Set<Aluno> alunos = new HashSet<>();
-
+	private Set<Aluno> alunosSincronizados = Collections.synchronizedSet(alunos);
+	
 	public String getNome() {
 		return nome;
 	}
