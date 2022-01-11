@@ -36,6 +36,21 @@ public class TestaCursoComAluno {
 		javaColecoes.getAlunos().forEach(a ->{
 			System.out.println(a);
 		});
+		System.out.println("O aluno" + a1 + " está matriculado? "); 
+		System.out.println(javaColecoes.estaMatriculado(a1));
+		
+		
+		Aluno oliveira = new Aluno("Lucas Oliveria Jacintho", 220012);
+		System.out.println("E esse Olivera está matriculado? ");
+		System.out.println(javaColecoes.estaMatriculado(oliveira));
+		
+//		System.out.println("O aluno Oliveira é igual ao aluno a2? ");
+//		System.out.println(a2 == oliveira);
+		
+		System.out.println("O aluno Oliveira é Equals ao aluno a2? ");
+		System.out.println(a2.equals(oliveira));
+		
+		System.out.println(a2.hashCode() == oliveira.hashCode());
 	}
 
 }
