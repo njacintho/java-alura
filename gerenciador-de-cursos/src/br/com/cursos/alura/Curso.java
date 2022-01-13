@@ -1,10 +1,12 @@
 package br.com.cursos.alura;
 
-import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+import java.util.NoSuchElementException;
 import java.util.Set;
 
 public class Curso {
@@ -12,7 +14,11 @@ public class Curso {
 	private String instrutor;
 	private List<Aula> aulas = new LinkedList<Aula>();
 	private Set<Aluno> alunos = new HashSet<>();
-	private Set<Aluno> alunosSincronizados = Collections.synchronizedSet(alunos);
+	private Map<Integer, Aluno> matriculaParaAluno = new HashMap<>();
+//	private Set<Aluno> alunos = new TreeSet<>(); // funciona para comparable
+//	private Set<Aluno> alunos = new LinkedHashSet<>(); // ele deixa na ordem adicioanda, apesar de naõ fazer uma ordenação.
+//	private Set<Aluno> alunosSincronizados = Collections.synchronizedSet(alunos);
+	
 	
 	public String getNome() {
 		return nome;
@@ -54,6 +60,7 @@ public class Curso {
 
 	public void matricula(Aluno aluno) {
 		this.alunos.add(aluno);
+		this.matriculaParaAluno.put(aluno.getRa(), aluno);
 		
 	}
 	
@@ -64,6 +71,21 @@ public class Curso {
 	public boolean estaMatriculado(Aluno aluno) {
 		return this.alunos.contains(aluno);
 	}
+
+	public Aluno buscaMatriculado(int numero) {
+		if(!matriculaParaAluno.containsKey(numero))
+			throw new NoSuchElementException("Matricula não encontrado " + numero);
+		
+		return matriculaParaAluno.get(numero);
+	}
+	
+////     Forma de checar um por vez. 
+//		for (Aluno aluno : alunos) {
+//			if(aluno.getRa() == numero)
+//				return aluno;
+//		}
+//		throw new NoSuchElementException("Matricula não encontrado " + numero);
+//	}
 
 	
 
