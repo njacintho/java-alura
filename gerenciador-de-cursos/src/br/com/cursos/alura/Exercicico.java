@@ -17,6 +17,8 @@ public class Exercicico {
 		pessoas.keySet().forEach(idade -> {
 			System.out.println(pessoas.get(idade));
 		});
+		
+		
 
 	}
 
