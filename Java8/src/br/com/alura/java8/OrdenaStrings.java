@@ -62,6 +62,7 @@ public class OrdenaStrings {
 		palavras.sort(comparador);
 		
 
+		palavras.sort(String.CASE_INSENSITIVE_ORDER);
 		System.out.println(palavras);
 
 //		new Thread (new Runnable() {
