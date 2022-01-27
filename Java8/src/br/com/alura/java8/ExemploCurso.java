@@ -3,6 +3,7 @@ package br.com.alura.java8;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Stream;
 
 class Curso {
@@ -67,5 +68,14 @@ public class ExemploCurso {
 		.map(Curso::getAlunos)
 		.forEach(System.out::println);
 
+		System.out.println();
+		
+		// retorna o primeiro valor que seja mairo de 50 
+        Optional<Curso> first = cursos.stream()
+		.filter(c -> c.getAlunos() > 50)
+		.findFirst();
+		
+        first.ifPresent(c -> System.out.println(c.getNome()));
+        
 	}
 }
