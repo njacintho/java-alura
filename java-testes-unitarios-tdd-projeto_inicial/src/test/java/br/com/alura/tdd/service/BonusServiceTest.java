@@ -24,9 +24,15 @@ class BonusServiceTest {
 
 		//testando uma exception 
 		
-		assertThrows(IllegalArgumentException.class,
-				() -> service.calcularBonus(new Funcionario("Rodrigo", LocalDate.now(), new BigDecimal("25000"))));
-		
+//		assertThrows(IllegalArgumentException.class,
+//				() -> service.calcularBonus(new Funcionario("Rodrigo", LocalDate.now(), new BigDecimal("25000"))));
+//		
+		try {
+			service.calcularBonus(new Funcionario("Rodrigo", LocalDate.now(), new BigDecimal("25000")));
+			fail("Não deu exception!");
+		} catch (Exception e) {
+			assertEquals("Funcionário com salario maior que R$ 10000,00 não pode receber bonus.", e.getMessage());
+		}
 	}
 	
 	// Teste de lógica cerificando que o 10% vai ser pago porque está abaixo de 1000
