@@ -17,10 +17,16 @@ class BonusServiceTest {
 	@Test
 	void bonusDeveriaSerZeroParaFuncionarioComSalarioMuitoAlto() {
 		BonusService service = new BonusService();
-		BigDecimal bonus = service.calcularBonus(new Funcionario("Rodrigo", LocalDate.now(), new BigDecimal("25000")));
+	//	BigDecimal bonus = service.calcularBonus(new Funcionario("Rodrigo", LocalDate.now(), new BigDecimal("25000")));
 		
 	//	assertEquals(BigDecimal.ZERO, bonus);
-		assertEquals(new BigDecimal("0.00"), bonus);
+	//	assertEquals(new BigDecimal("0.00"), bonus);
+
+		//testando uma exception 
+		
+		assertThrows(IllegalArgumentException.class,
+				() -> service.calcularBonus(new Funcionario("Rodrigo", LocalDate.now(), new BigDecimal("25000"))));
+		
 	}
 	
 	// Teste de lógica cerificando que o 10% vai ser pago porque está abaixo de 1000
