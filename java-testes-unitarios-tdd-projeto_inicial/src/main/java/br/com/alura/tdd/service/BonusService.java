@@ -15,5 +15,4 @@ public class BonusService {
 //		return valor;
 		return valor.setScale(2,RoundingMode.HALF_UP);// A rredondamente de duas casa para cima 
 	}
-
 }

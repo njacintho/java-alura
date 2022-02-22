@@ -32,5 +32,4 @@ public class Funcionario {
 		this.salario = this.salario.add(reajustes).setScale(2, RoundingMode.HALF_UP);
 
 	}
-
 }
