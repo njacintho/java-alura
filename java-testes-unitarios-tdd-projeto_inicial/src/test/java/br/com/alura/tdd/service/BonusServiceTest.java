@@ -22,7 +22,8 @@ class BonusServiceTest {
 	//	assertEquals(BigDecimal.ZERO, bonus);
 	//	assertEquals(new BigDecimal("0.00"), bonus);
 
-		//testando uma exception 
+
+//testando uma exception 
 		
 //		assertThrows(IllegalArgumentException.class,
 //				() -> service.calcularBonus(new Funcionario("Rodrigo", LocalDate.now(), new BigDecimal("25000"))));
